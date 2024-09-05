@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-color: #002765;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background: linear-gradient(135deg, rgba(21, 54, 119, 1) 0%, rgba(78, 8, 95, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  min-height: 200px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-top h2 {
+  font-weight: 500;
+  color: var(--bg-color);
+}
+
+.container-top img {
+  width: 40px;
+}
+
+.input-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  background-color: #eaedee;
+  padding: 0 0 0 15px;
+  border-radius: 50px;
+}
+
+.input-btn input {
+  padding: 15px;
+  background-color: transparent;
+  border-style: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.input-btn button {
+  border: none;
+  background-color: #ff653e;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 100px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.task-here {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.task-here li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 10px 0;
+  
+}
+
+.task-here li .uncheck-img {
+  width: 30px;
+  height: 30px;
+}
+
+.task-here li .uncheck-img:hover{
+  cursor: pointer;
+}
+
+.task-here .tasks { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.value-here {
+  outline: none;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons .edit-btn {
+  border: none;
+  background-color: #ff653e;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.buttons .delete-btn {
+  border: none;
+  background-color: #ff653e;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: #dd4d29;
+}
